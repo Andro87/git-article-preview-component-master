@@ -1,0 +1,214 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+@font-face{
+    font-family: "manrope";
+    src: url("../fonts/Manrope-Bold.ttf");
+    font-weight: 700;
+}
+
+@font-face{
+    font-family: "manrope";
+    src: url("../fonts/Manrope-Medium.ttf");
+    font-weight: 500;
+}
+
+
+html{
+    font-size: 13px;
+}
+
+body{
+    background-color:hsl(210, 46%, 95%);
+}
+
+
+
+h1,h3{
+    font-family: "manrope";
+    font-weight: 700;
+    color: hsl(217, 19%, 35%);
+}
+
+h1{
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+}
+
+p{
+    font-family: "manrope";
+    font-weight: 500;
+    color: hsl(214, 17%, 51%);
+    line-height: 150%;
+    font-size: 1.2rem;
+}
+
+.section{
+    padding: 150px 200px;
+    height: 100vh;
+}
+
+.container{
+    border-radius: 10px;
+    display: flex;  
+    justify-content: center; 
+}    
+
+
+.picture{    
+    background-image: url("../images/drawers.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px  0 0 10px;
+    height:auto ;
+    width: 36%;  
+}
+    
+
+.box{
+    padding: 40px;
+    background-color: white;
+    width: 52%;
+    border-radius: 0 10px 10px 0;
+}
+
+
+.avatar{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.avatar img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.avatar--detail{
+    margin-left: 15px;
+}
+
+.interactive{
+    display: flex;
+    align-items: center;
+}
+
+
+
+.visible{
+    visibility: hidden;
+    flex-direction: column;
+    position: relative;
+    bottom: 60px;
+    left: 120px;
+    display: flex;
+}
+
+
+.social{
+    padding:10px 15px;
+    background-color: hsl(217, 19%, 35%);
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+}
+
+
+
+.triangle{
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 12px solid hsl(217, 19%, 35%) ; 
+    align-self: center;
+}
+
+
+.share{
+    margin-left: auto;
+    border-radius: 50%;
+    background-color: hsl(210, 46%, 95%);
+    height: 35px;
+    width: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+} 
+
+.share--click{
+    background-color: hsl(217, 19%, 35%);
+}
+
+.share--click svg path{
+    fill: white;
+}
+
+.attribution { font-size: 11px; text-align: center; margin-top: 80px;}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media only screen and ( max-width:1200px) {
+
+    p{
+        font-size: 1.3rem;
+        word-spacing: 0.3rem;
+    }
+    
+    .section{
+        padding: 75px 25px;
+        height: auto;
+    }
+
+    .container{
+        display: block;
+    }
+
+
+    .picture{
+        border-radius: 10px  10px 0 0;
+        height: 280px;
+        width: auto;
+    }
+
+    .box{
+        padding: 40px 30px;
+        width: 100%;
+        border-radius: 0 0 10px 10px;
+    }
+
+    .avatar--detail{
+        margin-left: 15px;
+    }
+
+    .avatar--detail p{
+        word-spacing: normal;
+    }
+
+
+    .visible{
+        bottom: 45px;
+        left: 90px;
+    }
+
+    .social{
+        padding: 5px 10px;
+        width: 150px;
+    }
+    
+    .social p{
+        font-size: 1rem;
+    }
+ 
+
+}
